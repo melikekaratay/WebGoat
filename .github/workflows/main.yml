@@ -1,0 +1,31 @@
+stages:          
+  - sast
+  - sca
+  - build
+  - test
+  - deploy
+
+sast-job:       
+  stage: sast
+  script:
+    - echo "SAST"
+
+sca-job:  
+  stage: sca    
+  script:
+    - echo "SCA"
+
+build-job:  
+  stage: build    
+  script:
+    - echo "Build"
+
+test-job:     
+  stage: test  
+  script:
+    - echo "Test"
+
+deploy-job:      
+  stage: deploy  
+  script:
+    - echo "Deploy"
